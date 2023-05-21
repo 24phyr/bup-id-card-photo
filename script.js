@@ -5,9 +5,17 @@ function showImage() {
 
   if (rollNumber.length === 10) {
     outputImage.src = imageUrl;
-	
+
     outputImage.onerror = function() {
-      alert("No image found for the provided roll number.");
+      imageUrl = "https://ucam.bup.edu.bd/Upload/Avatar/" + rollNumber + ".jpeg";
+      outputImage.src = imageUrl;
+      outputImage.onerror = function() {
+        imageUrl = "https://ucam.bup.edu.bd/Upload/Avatar/" + rollNumber + ".png";
+        outputImage.src = imageUrl;
+        outputImage.onerror = function() {
+          alert("No image found for the provided roll number.");
+        };
+      };
     };
   } else {
     alert("Please enter a roll number.");
