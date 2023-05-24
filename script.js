@@ -3,7 +3,7 @@ function showImage() {
   var imageUrl = "https://ucam.bup.edu.bd/Upload/Avatar/" + rollNumber + ".jpg";
   var outputImage = document.getElementById("outputImage");
 
-  if (rollNumber.length === 10) {
+  if (!isNaN(rollNumber)) {
     outputImage.src = imageUrl;
 
     outputImage.onerror = function() {
