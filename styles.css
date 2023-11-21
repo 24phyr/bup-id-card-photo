@@ -1,4 +1,40 @@
 .output-image {
-  max-width: 400px;
-  max-height: auto;
+	max-width: 400px;
+	max-height: auto;
+	height: auto;
+	display: block;
+	margin-top: 20px;
+}
+
+body {
+	background-color: #16501D;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: #d9aa16;
+	text-align: center;
+	font-family: Helvetica;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+	max-width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #fea406;
+}
+
+button {
+	max-width: 300px;
+	padding: 10px;
+	background-color: #2E7D32;
+	color: #fff;
+	border: none;
+	cursor: pointer;
 }
